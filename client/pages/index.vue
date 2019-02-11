@@ -2,8 +2,6 @@
   <section>
     <div>
       <Header/>
-      <br>
-      <br>
       <section class="container">
         <div class="jumbotron jumbotron-fluid blue">
           <div class="container text-center text-white">
@@ -17,42 +15,50 @@
       <!-- the cards section -->
       <section class="container">
         <div class="row">
-          <div class="card col-md-4 text-center" style="width: 18rem;">
-            <i class="card-img-top p-2 fas fa-gas-pump fa-4x" style="color:#2a2a2a"></i>
-            <div class="card-body">
-              <h5 class="card-title">
-                <strong>Bring your Cylinder</strong>
-              </h5>
-              <p
-                class="card-text"
-              >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">shop now</a>
+          <div class="col-md-4">
+            <div class="card text-center" style="width: 18rem;">
+              <i class="card-img-top p-2 fas fa-gas-pump fa-4x" style="color:#2a2a2a"></i>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Bring your Cylinder</strong>
+                </h5>
+                <p
+                  class="card-text"
+                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">shop now</a>
+              </div>
             </div>
           </div>
+
           <!-- second card -->
-          <div class="card col-md-4 text-center" style="width: 18rem;">
-            <i class="card-img-top p-2 far fa-money-bill-alt fa-4x" style="color:#2a2a2a"></i>
-            <div class="card-body">
-              <h5 class="card-title">
-                <strong>Pay</strong>
-              </h5>
-              <p
-                class="card-text"
-              >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">shop now</a>
+          <div class="col-md-4">
+            <div class="card text-center" style="width: 18rem;">
+              <i class="card-img-top p-2 far fa-money-bill-alt fa-4x" style="color:#2a2a2a"></i>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Pay</strong>
+                </h5>
+                <p
+                  class="card-text"
+                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">shop now</a>
+              </div>
             </div>
           </div>
+
           <!-- third card -->
-          <div class="card col-md-4 text-center" style="width: 18rem;">
-            <i class="card-img-top p-2 fas fa-walking fa-4x" style="color:#2a2a2a"></i>
-            <div class="card-body">
-              <h5 class="card-title">
-                <strong>Go</strong>
-              </h5>
-              <p
-                class="card-text"
-              >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">shop now</a>
+          <div class="col-md-4">
+            <div class="card text-center" style="width: 18rem;">
+              <i class="card-img-top p-2 fas fa-walking fa-4x" style="color:#2a2a2a"></i>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Go</strong>
+                </h5>
+                <p
+                  class="card-text"
+                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">shop now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -78,6 +84,9 @@ export default {
 <style scoped>
 .blue {
   background-color: #212f3c;
+}
+.col-md-4 {
+  margin-right: 0px;
 }
 </style>
 

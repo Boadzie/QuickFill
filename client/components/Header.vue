@@ -4,12 +4,8 @@
       <router-link tag="a" class="navbar-brand" to="/" exact>
         <strong>Quick</strong>Fill
       </router-link>
-      <router-link tag="a" class="navbar-brand" to="/" exact>
-        <strong>Shop</strong>
-      </router-link>
-      <router-link tag="a" class="navbar-brand" to="/" exact>
-        <strong>About</strong>
-      </router-link>
+      <router-link tag="a" class="navbar-brand" to="/" exact>Shop</router-link>
+      <router-link tag="a" class="navbar-brand" to="/" exact>About</router-link>
     </div>
   </nav>
 </template> 
