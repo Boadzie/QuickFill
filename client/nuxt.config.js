@@ -1,9 +1,13 @@
+const pkg = require('./package')
+
 module.exports = {
+  mode: 'universal',
+
   /*
    ** Headers of the page
    */
   head: {
-    title: 'client',
+    title: pkg.name,
     meta: [{
         charset: 'utf-8'
       },
@@ -14,49 +18,60 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'an online cylinder ordering app'
+        content: pkg.description
       }
     ],
+    script: [{
+      src: "https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    }],
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }],
-    link: [{
-      rel: 'stylesheet',
-      href: "https://use.fontawesome.com/releases/v5.7.1/css/all.css",
-      integrity: "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr",
-      crossorigin: "anonymous"
     }]
   },
-  modules: [
-    'bootstrap-vue/nuxt',
-  ],
+
   /*
-   ** Customize the progress bar color
+   ** Customize the progress-bar color
    */
   loading: {
-    color: '#3B8070'
+    color: '#fff'
   },
+
+  /*
+   ** Global CSS
+   */
+  css: [],
+
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
+
+  /*
+   ** Nuxt.js modules
+   */
+  modules: [,
+    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    '@nuxtjs/bulma'
+  ],
+
   /*
    ** Build configuration
    */
   build: {
-    /*
-     ** Run ESLint on save
-     */
-    extend(config, {
-      isDev,
-      isClient
-    }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
       }
+    },
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {
+
     }
   }
 }

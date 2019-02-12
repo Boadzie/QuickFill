@@ -1,92 +1,30 @@
 <template>
-  <section>
-    <div>
-      <Header/>
-      <section class="container">
-        <div class="jumbotron jumbotron-fluid blue">
-          <div class="container text-center text-white">
-            <h1 class="display-4">
-              <strong>Quick</strong>Fill
-            </h1>
-            <em class>The easiest way to refill!</em>
-          </div>
+  <div>
+    <Header/>
+    <section class="hero info is-medium has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Medium title</h1>
+          <h2 class="subtitle">Medium subtitle</h2>
         </div>
-      </section>
-      <!-- the cards section -->
-      <section class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card text-center" style="width: 18rem;">
-              <i class="card-img-top p-2 fas fa-gas-pump fa-4x" style="color:#2a2a2a"></i>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <strong>Bring your Cylinder</strong>
-                </h5>
-                <p
-                  class="card-text"
-                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">shop now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- second card -->
-          <div class="col-md-4">
-            <div class="card text-center" style="width: 18rem;">
-              <i class="card-img-top p-2 far fa-money-bill-alt fa-4x" style="color:#2a2a2a"></i>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <strong>Pay</strong>
-                </h5>
-                <p
-                  class="card-text"
-                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">shop now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- third card -->
-          <div class="col-md-4">
-            <div class="card text-center" style="width: 18rem;">
-              <i class="card-img-top p-2 fas fa-walking fa-4x" style="color:#2a2a2a"></i>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <strong>Go</strong>
-                </h5>
-                <p
-                  class="card-text"
-                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">shop now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end of card -->
-      <Footer/>
-    </div>
-  </section>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-import Header from "~/components/Header";
-import Footer from "~/components/Footer";
+import Header from "~/components/Header.vue";
 
 export default {
   components: {
-    Header,
-    Footer
+    Header
   }
 };
 </script>
 
 <style scoped>
-.blue {
-  background-color: #212f3c;
-}
-.col-md-4 {
-  margin-right: 0px;
+.info {
+  background-color: #626567 !important;
+  color: #fff;
 }
 </style>
-
