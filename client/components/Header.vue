@@ -1,7 +1,7 @@
 <template>
   <div>
     <no-ssr>
-      <nav class="navbar grey has-text-white" role="navigation" aria-label="main navigation">
+      <nav class="navbar grey " role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <nuxt-link
             class="navbar-item"
@@ -58,7 +58,7 @@ nav {
 }
 
 .grey {
-  color: #fff;
-  background-color: #f2f3f4 !important;
+  color: #fff !important;
+  background-color:#F2F3F4 !important;
 }
 </style>
