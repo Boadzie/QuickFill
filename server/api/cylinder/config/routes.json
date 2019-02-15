@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cylinders",
+      "handler": "Cylinder.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cylinders/count",
+      "handler": "Cylinder.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cylinders/:_id",
+      "handler": "Cylinder.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cylinders",
+      "handler": "Cylinder.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cylinders/:_id",
+      "handler": "Cylinder.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cylinders/:_id",
+      "handler": "Cylinder.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

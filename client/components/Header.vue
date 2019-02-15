@@ -1,7 +1,7 @@
 <template>
   <div>
     <no-ssr>
-      <nav class="navbar grey " role="navigation" aria-label="main navigation">
+      <nav class="navbar grey" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <nuxt-link
             class="navbar-item"
@@ -25,7 +25,7 @@
         </div>
         <div class="navbar-menu" v-bind:class="{'is-active': isOpen}">
           <div class="navbar-end">
-            <nuxt-link class="navbar-item" to="/insights">Shop</nuxt-link>
+            <nuxt-link class="navbar-item" to="/shop">Shop</nuxt-link>
             <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
             <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
             <nuxt-link to class="navbar-item">
@@ -59,6 +59,6 @@ nav {
 
 .grey {
   color: #fff !important;
-  background-color:#F2F3F4 !important;
+  background-color: #f2f3f4 !important;
 }
 </style>
